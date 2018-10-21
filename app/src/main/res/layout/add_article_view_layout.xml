@@ -65,7 +65,8 @@
             android:textColor="@android:color/white"
             android:textSize="13sp"
             android:background="@drawable/add_button_drawable"
-            android:layout_marginStart="@dimen/general_activity_space" />
+            android:layout_marginStart="@dimen/general_activity_space"
+            android:layout_marginEnd="35dp"/>
 
     </RelativeLayout>
 
@@ -75,6 +76,7 @@
         android:layout_height="1dp"
         android:background="@color/lighter_grey_alpha"
         android:layout_alignParentBottom="true"
-        android:layout_toEndOf="@id/article_image"/>
+        android:layout_toEndOf="@id/article_image"
+        android:layout_marginEnd="35dp"/>
 
 </RelativeLayout>
