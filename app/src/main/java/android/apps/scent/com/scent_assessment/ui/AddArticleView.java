@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import androidx.core.content.ContextCompat;
+
 public class AddArticleView extends FrameLayout {
 
     private ImageView articleImage;
@@ -75,8 +77,10 @@ public class AddArticleView extends FrameLayout {
     }
 
     public void setNewPrice(String text) {
-        this.articleNewPrice.setText(text);
-        strikeThroughPrice();
+        if (text != null && !text.isEmpty()) {
+            this.articleNewPrice.setText(text);
+            strikeThroughPrice();
+        }
     }
 
     public void setImageUrl(String text) {
@@ -85,5 +89,6 @@ public class AddArticleView extends FrameLayout {
 
     private void strikeThroughPrice() {
         articlePrice.setPaintFlags(articlePrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        articlePrice.setTextColor(ContextCompat.getColor(getContext(), R.color.lighter_grey_alpha));
     }
 }

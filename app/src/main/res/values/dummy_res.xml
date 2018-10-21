@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BANNER RESSOURCES -->
+
+    <string name="banner_url">https://www.collectoffers.com/EditorImages/Make-up-Banner.png</string>
+
+
+    <!-- BESTSELLERS ARTICLES -->
+    <string name="bestseller_image_1" translatable="false">https://res.cloudinary.com/feelunique-com/image/upload/f_auto,t_product_main/v1/live/product/main-image/33634/kwa8dm4z5sbra1uifrhl.jpg</string>
+    <string name="bestseller_brand_1" translatable="false">Prada</string>
+    <string name="bestseller_description_1" translatable="false">Candy</string>
+    <string name="bestseller_price_1" translatable="false">356 SR</string>
+    <string name="bestseller_new_price_1" translatable="false">320 SR</string>
+
+    <string name="bestseller_image_2" translatable="false">http://parfum-vente.com/wp-content/uploads/2016/03/Parfum-homme-Sauvage-de-Dior2.png</string>
+    <string name="bestseller_brand_2" translatable="false">Dolce &amp; Gabana</string>
+    <string name="bestseller_description_2" translatable="false">The One and text goes here until it br ...</string>
+    <string name="bestseller_price_2" translatable="false">356 SR</string>
+
+    <string name="bestseller_image_3" translatable="false">https://cdn.store-factory.com/www.origines-parfums.com/content/product_8875376b.png?v=1533005482</string>
+    <string name="bestseller_brand_3" translatable="false">Aigner</string>
+    <string name="bestseller_description_3" translatable="false">N. 1</string>
+    <string name="bestseller_price_3" translatable="false">356 SR</string>
+
+
+    <!-- GRIDS ARTICLES -->
+
+    <string name="grid_article_image_1" translatable="false">https://res.cloudinary.com/feelunique-com/image/upload/f_auto,t_product_main/v1/live/product/main-image/74860/pnhigfazekod7c3wcadx.jpg</string>
+    <string name="grid_article_category_1" translatable="false">Pencils</string>
+
+    <string name="grid_article_image_2" translatable="false">https://www.bebeautifulskincare.com/images/P/rvb%20lipstick%20%2312.png</string>
+    <string name="grid_article_category_2" translatable="false">Lipstick</string>
+
+    <string name="grid_article_image_3" translatable="false">https://idunminerals.com/images/zoom/idun-minerals-lipgloss-irma-min.png</string>
+    <string name="grid_article_category_3" translatable="false">Lipgloss</string>
+
+    <string name="grid_article_image_4" translatable="false">https://banner2.kisspng.com/20180408/ojw/kisspng-lip-gloss-cosmetics-sephora-make-up-for-ever-makeup-5ac9aa157e0bf8.5279628815231657175163.jpg</string>
+    <string name="grid_article_category_4" translatable="false">Lip Balm</string>
+
+    <string name="grid_article_image_5" translatable="false">https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kanebo/www-suqqu-com/img/product/base_makeup/treatment_primer.png?fmt=png-alpha</string>
+    <string name="grid_article_category_5" translatable="false">Treatment</string>
+
+    <string name="grid_article_image_6" translatable="false">https://alexnld.com/wp-content/uploads/2015/03/SKU078359-3.png</string>
+    <string name="grid_article_category_6" translatable="false">Palette</string>
+</resources>
