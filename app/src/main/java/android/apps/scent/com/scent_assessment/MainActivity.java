@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         ViewPager pager = findViewById(R.id.best_sellers_view_pager);
         pager.setAdapter(new BestSellersDummyPagerAdapter(this));
-
     }
 
 

@@ -55,10 +55,4 @@ public class SquareArticleView extends FrameLayout {
     public void setImageUrl(String text) {
         Glide.with(this).load(text).into(articleImage);
     }
-
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int size = getContext().getResources().getDimensionPixelSize(R.dimen.square_article_size);
-        setMeasuredDimension(size, size);
-    }
 }
