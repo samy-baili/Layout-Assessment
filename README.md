@@ -18,4 +18,5 @@ Small apps with complex UI
 * [Glide](https://github.com/bumptech/glide) - An image loading and caching library
 
 
-![alt text](https://www.dropbox.com/s/ttl5dxzvhy6ou6m/Screenshot_20181021-172707.jpg?dl=0)
+## Screenshot
+![Alt text](ui/Screenshot_20181021-172707.jpg?raw=true "Screenshot")
