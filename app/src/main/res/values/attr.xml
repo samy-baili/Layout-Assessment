@@ -2,9 +2,18 @@
 <resources>
 
     <declare-styleable name="SquareCardView">
-        <attr name="icon" format="integer" />
+        <attr name="iconCard" format="integer" />
         <attr name="labelCard" format="string" />
         <attr name="isSelected" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AddArticleView">
+        <attr name="brand" format="string" />
+        <attr name="description" format="string" />
+        <attr name="price" format="string" />
+        <attr name="new_price" format="string" />
+        <attr name="image_url" format="string" />
     </declare-styleable>
 
 </resources>

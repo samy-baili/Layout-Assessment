@@ -64,11 +64,11 @@ public class SquareCardView extends CardView {
         setMeasuredDimension(size, size);
     }
 
-    private void setLabelValue(String label) {
+    public void setLabelValue(String label) {
         this.label.setText(label);
     }
 
-    private void setSelectionMode(boolean isSelected) {
+    public void setSelectionMode(boolean isSelected) {
         if (isSelected) {
             tab.setVisibility(VISIBLE);
         }

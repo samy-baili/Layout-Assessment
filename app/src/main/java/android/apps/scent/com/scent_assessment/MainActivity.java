@@ -15,7 +15,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
-//        RecyclerView recyclerView = findViewById(R.id.left_panel_recycler_view);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
