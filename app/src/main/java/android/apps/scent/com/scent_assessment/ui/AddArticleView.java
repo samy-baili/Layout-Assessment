@@ -6,13 +6,13 @@ import android.content.res.TypedArray;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
-public class AddArticleView extends RelativeLayout {
+public class AddArticleView extends FrameLayout {
 
     private ImageView articleImage;
     private TextView articleBrand;

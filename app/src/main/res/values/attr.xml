@@ -16,4 +16,9 @@
         <attr name="image_url" format="string" />
     </declare-styleable>
 
+    <declare-styleable name="SquareArticleView">
+        <attr name="category" format="string" />
+        <attr name="image_url_article" format="string" />
+    </declare-styleable>
+
 </resources>

@@ -7,36 +7,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <HorizontalScrollView
-        android:id="@+id/left_panel_recycler_view"
+    <ScrollView
+        android:id="@+id/left_panel_scroll_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/square_views_left_panel" />
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/right_panel_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/left_panel_scroll_view">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingStart="@dimen/general_activity_space"
-            android:paddingEnd="@dimen/general_activity_space">
+            android:orientation="vertical">
 
-            <android.apps.scent.com.scent_assessment.ui.SquareCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <android.apps.scent.com.scent_assessment.ui.SquareCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <android.apps.scent.com.scent_assessment.ui.SquareCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <android.apps.scent.com.scent_assessment.ui.SquareCardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/banner_height"
+                android:contentDescription="@null"/>
 
         </LinearLayout>
 
-    </HorizontalScrollView>
+    </ScrollView>
 
 </RelativeLayout>
