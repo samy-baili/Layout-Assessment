@@ -1,26 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingStart="@dimen/general_activity_space"
     android:paddingEnd="@dimen/general_activity_space">
 
-    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+    <Space
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="@dimen/general_activity_space" />
 
     <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_2" />
 
     <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_3"/>
 
     <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        app:isSelected="true"
+        app:labelCard="@string/label_left_panel_1"/>
 
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_4"/>
+
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_5"/>
+
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_6"/>
+
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_7"/>
+
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_1"/>
+
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_2"/>
+
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_3"/>
+
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_4"/>
+
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_5"/>
+
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_6"/>
+
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:labelCard="@string/label_left_panel_7"/>
 </LinearLayout>

@@ -43,4 +43,16 @@
 
     <string name="grid_article_image_6" translatable="false">https://alexnld.com/wp-content/uploads/2015/03/SKU078359-3.png</string>
     <string name="grid_article_category_6" translatable="false">Palette</string>
+
+
+    <!-- LEF PANEL -->
+
+
+    <string name="label_left_panel_1" translatable="false">Makeup</string>
+    <string name="label_left_panel_2" translatable="false">Skincare</string>
+    <string name="label_left_panel_3" translatable="false">Beauty Tools</string>
+    <string name="label_left_panel_4" translatable="false">Home Fragrances</string>
+    <string name="label_left_panel_5" translatable="false">Gift</string>
+    <string name="label_left_panel_6" translatable="false">Men</string>
+    <string name="label_left_panel_7" translatable="false">Kid</string>
 </resources>

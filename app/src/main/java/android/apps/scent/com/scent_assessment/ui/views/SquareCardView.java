@@ -5,14 +5,19 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffColorFilter;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 
 public class SquareCardView extends CardView {
 
@@ -28,8 +33,8 @@ public class SquareCardView extends CardView {
 
     public SquareCardView(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        initAttrs(context, attrs);
 
+        initAttrs(context, attrs);
     }
 
     private void init(Context context) {
@@ -53,27 +58,32 @@ public class SquareCardView extends CardView {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SquareCardView);
 
         setLabelValue(a.getString(R.styleable.SquareCardView_labelCard));
-        setSelectionMode(a.getBoolean(R.styleable.SquareCardView_isSelected, false));
+        setSelectionMode(a.getBoolean(R.styleable.SquareCardView_isSelected, false), a.getInteger(R.styleable.SquareCardView_iconCard, android.R.drawable.stat_sys_warning));
 
         a.recycle();
-    }
-
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        int size = getContext().getResources().getDimensionPixelSize(R.dimen.square_card_size);
-        setMeasuredDimension(size, size);
     }
 
     public void setLabelValue(String label) {
         this.label.setText(label);
     }
 
-    public void setSelectionMode(boolean isSelected) {
+    public void setSelectionMode(boolean isSelected, int drawable) {
         if (isSelected) {
             tab.setVisibility(VISIBLE);
+            setIcon(drawable, Color.BLACK);
         }
         else {
-            tab.setVisibility(INVISIBLE);
+            tab.setVisibility(GONE);
+            setIcon(drawable, ContextCompat.getColor(getContext(), R.color.light_grey));
+        }
+    }
+
+    private void setIcon(@DrawableRes int res, int color) {
+        Drawable drawable = ContextCompat.getDrawable(getContext(), res);
+        if (drawable != null) {
+            drawable.mutate();
+            drawable.setColorFilter(new PorterDuffColorFilter(color, PorterDuff.Mode.MULTIPLY));
+            icon.setImageDrawable(drawable);
         }
     }
 }

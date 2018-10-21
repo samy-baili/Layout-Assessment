@@ -35,11 +35,6 @@ public class BestSellersDummyPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public int getItemPosition(@NonNull Object object) {
-        return PagerAdapter.POSITION_NONE;
-    }
-
-    @Override
     public boolean isViewFromObject(@NonNull View arg0, @NonNull Object arg1) {
         return arg0 == arg1;
     }
