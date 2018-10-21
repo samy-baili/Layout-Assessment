@@ -4,5 +4,6 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="light_grey">#919191</color>
-    <color name="lighter_grey">#b3b1b1</color>
+    <color name="lighter_grey_alpha">#3db3b1b1</color>
+    <color name="button_grey_alpha">#16b3b1b1</color>
 </resources>

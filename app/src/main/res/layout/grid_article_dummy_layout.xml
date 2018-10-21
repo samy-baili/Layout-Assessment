@@ -3,7 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/general_activity_space">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -37,10 +38,13 @@
 
     </GridLayout>
 
-    <Button
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="@dimen/grid_layout_button_height"
-        android:text="@string/view_all_button_grid_layout"
+        android:text="@string/view_all_lips_button_grid_layout"
+        android:background="@color/button_grey_alpha"
+        android:gravity="center"
+        android:textSize="15sp"
         android:layout_marginTop="@dimen/general_activity_space"
         android:layout_marginBottom="@dimen/general_activity_space"/>
 

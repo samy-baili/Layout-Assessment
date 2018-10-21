@@ -4,4 +4,5 @@
     <string name="lips_title_grid_layout">Lips</string>
     <string name="face_title_grid_layout">Face</string>
     <string name="nails_title_grid_layout">Nails</string>
+    <string name="bestseller_title_grid_layout">Bestsellers</string>
 </resources>
