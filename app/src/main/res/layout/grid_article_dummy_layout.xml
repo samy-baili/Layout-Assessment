@@ -40,7 +40,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="@dimen/grid_layout_button_height"
-        android:background="@color/lighter_grey"
         android:text="@string/view_all_button_grid_layout"
         android:layout_marginTop="@dimen/general_activity_space"
         android:layout_marginBottom="@dimen/general_activity_space"/>

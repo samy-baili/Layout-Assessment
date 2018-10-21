@@ -41,20 +41,121 @@
                 android:layout_height="wrap_content"
                 layout="@layout/best_sellers_dummy_layout" />
 
-            <include
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                layout="@layout/grid_article_dummy_layout" />
 
-            <include
-                android:layout_width="match_parent"
+            <com.github.florent37.expansionpanel.ExpansionHeader
                 android:layout_height="wrap_content"
-                layout="@layout/grid_article_dummy_layout" />
+                android:layout_width="match_parent"
+                app:expansion_headerIndicator="@id/headerIndicator_1"
+                app:expansion_layout="@id/expansionLayout_1"
+                app:expansion_toggleOnClick="true">
 
-            <include
-                android:layout_width="match_parent"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="@string/lips_title_grid_layout"/>
+
+                <ImageView
+                    android:id="@+id/headerIndicator_1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="@dimen/general_activity_space"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"
+                    android:contentDescription="@null"/>
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout_1"
                 android:layout_height="wrap_content"
-                layout="@layout/grid_article_dummy_layout" />
+                android:layout_width="match_parent">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/grid_article_dummy_layout" />
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:expansion_headerIndicator="@id/headerIndicator_2"
+                app:expansion_layout="@id/expansionLayout_2"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="@string/face_title_grid_layout"/>
+
+                <ImageView
+                    android:id="@+id/headerIndicator_2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="@dimen/general_activity_space"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"
+                    android:contentDescription="@null"/>
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout_2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/grid_article_dummy_layout" />
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
+            <com.github.florent37.expansionpanel.ExpansionHeader
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:expansion_headerIndicator="@id/headerIndicator_3"
+                app:expansion_layout="@id/expansionLayout_3"
+                app:expansion_toggleOnClick="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="@string/nails_title_grid_layout"/>
+
+                <ImageView
+                    android:id="@+id/headerIndicator_3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="@dimen/general_activity_space"
+                    app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"
+                    android:contentDescription="@null"/>
+
+            </com.github.florent37.expansionpanel.ExpansionHeader>
+
+            <com.github.florent37.expansionpanel.ExpansionLayout
+                android:id="@+id/expansionLayout_3"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/grid_article_dummy_layout" />
+
+            </com.github.florent37.expansionpanel.ExpansionLayout>
+
         </LinearLayout>
 
     </ScrollView>

@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Scent-Assessment</string>
-    <string name="view_all_button_grid_layout">View All Lips</string>
+    <string name="view_all_lips_button_grid_layout">View All</string>
+    <string name="lips_title_grid_layout">Lips</string>
+    <string name="face_title_grid_layout">Face</string>
+    <string name="nails_title_grid_layout">Nails</string>
 </resources>
