@@ -3,6 +3,7 @@ package android.apps.scent.com.scent_assessment.ui;
 import android.apps.scent.com.scent_assessment.R;
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.widget.Button;
@@ -44,6 +45,7 @@ public class AddArticleView extends FrameLayout {
         this.articleNewPrice = findViewById(R.id.article_new_price);
         this.articleAddButton = findViewById(R.id.article_button);
 
+        setBackgroundColor(Color.BLACK);
     }
 
     private void initAttr(Context context, AttributeSet attrs) {

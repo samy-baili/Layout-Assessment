@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:maxLines="2"
         android:ellipsize="end"
-        android:textColor="@android:color/secondary_text_light"
+        android:textColor="@color/light_grey"
         android:layout_alignStart="@id/article_brand"
         android:layout_toStartOf="@+id/article_button"
         android:layout_below="@id/article_brand"/>
@@ -59,7 +59,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@android:color/secondary_text_light"
+        android:background="@color/light_grey"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

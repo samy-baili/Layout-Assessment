@@ -15,7 +15,7 @@
         <include
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            layout="@layout/square_views_left_panel" />
+            layout="@layout/square_views_left_panel_dummy_layout" />
 
     </ScrollView>
 
@@ -35,6 +35,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/banner_height"
                 android:contentDescription="@null"/>
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/best_sellers_dummy_layout" />
 
         </LinearLayout>
 
