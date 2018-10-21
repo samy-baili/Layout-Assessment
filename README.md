@@ -6,6 +6,7 @@ Small apps with complex UI
 * The project is using dummy data available in ressource file (dummy_res.xml).
 * All views are custom.
 * Approximate number of hours => 3:30
+* APK link => https://www.dropbox.com/s/76itmdod8np32y2/app-debug.apk?dl=0
 
 
 ## To do:
