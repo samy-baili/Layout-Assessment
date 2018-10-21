@@ -3,10 +3,9 @@ package android.apps.scent.com.scent_assessment.ui.views;
 import android.apps.scent.com.scent_assessment.R;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
-import android.widget.Button;
+import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -22,8 +21,7 @@ public class AddArticleView extends FrameLayout {
     private TextView articleDescription;
     private TextView articlePrice;
     private TextView articleNewPrice;
-
-    private Button articleAddButton;
+    private View divider;
 
     public AddArticleView(Context context) {
         super(context);
@@ -45,9 +43,7 @@ public class AddArticleView extends FrameLayout {
         this.articleDescription = findViewById(R.id.article_description);
         this.articlePrice = findViewById(R.id.article_price);
         this.articleNewPrice = findViewById(R.id.article_new_price);
-        this.articleAddButton = findViewById(R.id.article_button);
-
-        setBackgroundColor(Color.BLACK);
+        this.divider = findViewById(R.id.divider);
     }
 
     private void initAttr(Context context, AttributeSet attrs) {
@@ -59,7 +55,8 @@ public class AddArticleView extends FrameLayout {
         setDescription(a.getString(R.styleable.AddArticleView_description));
         setPrice(a.getString(R.styleable.AddArticleView_price));
         setNewPrice(a.getString(R.styleable.AddArticleView_new_price));
-//        setImageUrl(a.getString(R.styleable.AddArticleView_image_url));
+        setImageUrl(a.getString(R.styleable.AddArticleView_image_url));
+        displayDivider(a.getBoolean(R.styleable.AddArticleView_display_divider, true));
 
         a.recycle();
     }
@@ -73,7 +70,7 @@ public class AddArticleView extends FrameLayout {
     }
 
     public void setPrice(String text) {
-        this.articleNewPrice.setText(text);
+        this.articlePrice.setText(text);
     }
 
     public void setNewPrice(String text) {
@@ -87,8 +84,12 @@ public class AddArticleView extends FrameLayout {
         Glide.with(this).load(text).into(articleImage);
     }
 
+    public void displayDivider(boolean display) {
+        divider.setVisibility(display ? VISIBLE : INVISIBLE);
+    }
+
     private void strikeThroughPrice() {
         articlePrice.setPaintFlags(articlePrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-        articlePrice.setTextColor(ContextCompat.getColor(getContext(), R.color.lighter_grey_alpha));
+        articlePrice.setTextColor(ContextCompat.getColor(getContext(), R.color.light_grey));
     }
 }

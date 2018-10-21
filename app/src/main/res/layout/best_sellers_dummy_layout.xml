@@ -29,29 +29,9 @@
 
     </RelativeLayout>
 
-    <androidx.viewpager.widget.ViewPager
+    <android.apps.scent.com.scent_assessment.ui.views.WrapContentHeightViewPager
         android:id="@+id/best_sellers_view_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <!--<include-->
-            <!--android:id="@+id/page_one"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--layout="@layout/add_article_views_dummy_layout" />-->
-
-        <!--<include-->
-            <!--android:id="@+id/page_two"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--layout="@layout/add_article_views_dummy_layout" />-->
-
-        <!--<include-->
-            <!--android:id="@+id/page_three"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--layout="@layout/add_article_views_dummy_layout" />-->
-
-    </androidx.viewpager.widget.ViewPager>
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>

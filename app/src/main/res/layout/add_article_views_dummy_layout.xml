@@ -15,7 +15,6 @@
         app:new_price="@string/bestseller_new_price_1"
         app:description="@string/bestseller_description_1"/>
 
-
     <android.apps.scent.com.scent_assessment.ui.views.AddArticleView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,6 +29,7 @@
         app:image_url="@string/bestseller_image_3"
         app:brand="@string/bestseller_brand_3"
         app:price="@string/bestseller_price_3"
-        app:description="@string/bestseller_description_3"/>
+        app:description="@string/bestseller_description_3"
+        app:display_divider="false"/>
 
 </LinearLayout>

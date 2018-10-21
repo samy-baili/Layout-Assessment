@@ -2,7 +2,6 @@ package android.apps.scent.com.scent_assessment.ui.adapter;
 
 import android.app.Activity;
 import android.apps.scent.com.scent_assessment.R;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,9 +19,8 @@ public class BestSellersDummyPagerAdapter extends PagerAdapter {
 
     @Override
     public @NonNull Object instantiateItem(@NonNull ViewGroup collection, int position) {
-        Log.d("BestSellersDummyPager", "collection == " + position);
-        View v = inflater.inflate(R.layout.add_article_views_dummy_layout, null);
-        collection.addView(v);
+        View v = inflater.inflate(R.layout.add_article_views_dummy_layout, collection, false);
+        collection.addView(v, position);
         return v;
     }
 
@@ -44,5 +42,10 @@ public class BestSellersDummyPagerAdapter extends PagerAdapter {
     @Override
     public boolean isViewFromObject(@NonNull View arg0, @NonNull Object arg1) {
         return arg0 == arg1;
+    }
+
+    @Override
+    public float getPageWidth(int position) {
+        return 0.9f;
     }
 }

@@ -14,6 +14,7 @@
         <attr name="price" format="string" />
         <attr name="new_price" format="string" />
         <attr name="image_url" format="string" />
+        <attr name="display_divider" format="boolean" />
     </declare-styleable>
 
     <declare-styleable name="SquareArticleView">
