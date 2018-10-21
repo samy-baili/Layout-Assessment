@@ -33,8 +33,11 @@
             <ImageView
                 android:id="@+id/banner"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/banner_height"
-                android:contentDescription="@null"/>
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:scaleType="fitStart"
+                android:layout_marginEnd="@dimen/general_activity_space"
+                android:layout_marginTop="@dimen/general_activity_space"/>
 
             <include
                 android:layout_width="match_parent"
@@ -75,7 +78,7 @@
                     android:layout_width="wrap_content"
                     android:layout_gravity="center_vertical|end"
                     android:adjustViewBounds="true"
-                    android:layout_marginStart="@dimen/general_activity_space"
+                    android:layout_marginEnd="@dimen/general_activity_space"
                     app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"
                     android:contentDescription="@null"/>
 
@@ -126,7 +129,7 @@
                     android:layout_width="wrap_content"
                     android:layout_gravity="center_vertical|end"
                     android:adjustViewBounds="true"
-                    android:layout_marginStart="@dimen/general_activity_space"
+                    android:layout_marginEnd="@dimen/general_activity_space"
                     app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"
                     android:contentDescription="@null"/>
 
@@ -177,7 +180,7 @@
                     android:layout_width="wrap_content"
                     android:layout_gravity="center_vertical|end"
                     android:adjustViewBounds="true"
-                    android:layout_marginStart="@dimen/general_activity_space"
+                    android:layout_marginEnd="@dimen/general_activity_space"
                     app:srcCompat="@drawable/ic_expansion_header_indicator_grey_24dp"
                     android:contentDescription="@null"/>
 

@@ -2,6 +2,8 @@ package android.apps.scent.com.scent_assessment.ui.adapter;
 
 import android.app.Activity;
 import android.apps.scent.com.scent_assessment.R;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -10,27 +12,18 @@ import androidx.viewpager.widget.PagerAdapter;
 
 public class BestSellersDummyPagerAdapter extends PagerAdapter {
 
-    private Activity activity;
+    private LayoutInflater inflater;
 
     public BestSellersDummyPagerAdapter(Activity activity) {
-        this.activity = activity;
+        this.inflater = LayoutInflater.from(activity);
     }
 
-    public Object instantiateItem(@NonNull View collection, int position) {
-
-        int resId = 0;
-        switch (position) {
-            case 0:
-                resId = R.id.page_one;
-                break;
-            case 1:
-                resId = R.id.page_two;
-                break;
-            case 2:
-                resId = R.id.page_three;
-                break;
-        }
-        return activity.findViewById(resId);
+    @Override
+    public @NonNull Object instantiateItem(@NonNull ViewGroup collection, int position) {
+        Log.d("BestSellersDummyPager", "collection == " + position);
+        View v = inflater.inflate(R.layout.add_article_views_dummy_layout, null);
+        collection.addView(v);
+        return v;
     }
 
     @Override
@@ -39,12 +32,17 @@ public class BestSellersDummyPagerAdapter extends PagerAdapter {
     }
 
     @Override
-    public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
-        super.destroyItem(container, position, object);
+    public void destroyItem(@NonNull ViewGroup collection, int position, @NonNull Object view) {
+        collection.removeView((View) view);
     }
 
     @Override
-    public boolean isViewFromObject(View arg0, Object arg1) {
-        return arg0 == ((View) arg1);
+    public int getItemPosition(@NonNull Object object) {
+        return PagerAdapter.POSITION_NONE;
+    }
+
+    @Override
+    public boolean isViewFromObject(@NonNull View arg0, @NonNull Object arg1) {
+        return arg0 == arg1;
     }
 }

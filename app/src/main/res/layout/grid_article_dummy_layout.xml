@@ -7,49 +7,63 @@
     android:orientation="vertical"
     android:paddingEnd="@dimen/general_activity_space">
 
-    <GridLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:rowCount="3"
-        android:columnCount="3">
+        android:orientation="horizontal"
+        android:weightSum="3">
 
-        <android.apps.scent.com.scent_assessment.ui.SquareArticleView
-            android:layout_width="wrap_content"
+        <android.apps.scent.com.scent_assessment.ui.views.SquareArticleView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:image_url_article="@string/grid_article_image_1"
             app:category="@string/grid_article_category_1" />
 
-        <android.apps.scent.com.scent_assessment.ui.SquareArticleView
-            android:layout_width="wrap_content"
+        <android.apps.scent.com.scent_assessment.ui.views.SquareArticleView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:image_url_article="@string/grid_article_image_2"
             app:category="@string/grid_article_category_2" />
 
-        <android.apps.scent.com.scent_assessment.ui.SquareArticleView
-            android:layout_width="wrap_content"
+        <android.apps.scent.com.scent_assessment.ui.views.SquareArticleView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:image_url_article="@string/grid_article_image_3"
             app:category="@string/grid_article_category_3" />
 
-        <android.apps.scent.com.scent_assessment.ui.SquareArticleView
-            android:layout_width="wrap_content"
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <android.apps.scent.com.scent_assessment.ui.views.SquareArticleView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:image_url_article="@string/grid_article_image_4"
             app:category="@string/grid_article_category_4" />
 
-        <android.apps.scent.com.scent_assessment.ui.SquareArticleView
-            android:layout_width="wrap_content"
+        <android.apps.scent.com.scent_assessment.ui.views.SquareArticleView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:image_url_article="@string/grid_article_image_5"
             app:category="@string/grid_article_category_5" />
 
-        <android.apps.scent.com.scent_assessment.ui.SquareArticleView
-            android:layout_width="wrap_content"
+        <android.apps.scent.com.scent_assessment.ui.views.SquareArticleView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:image_url_article="@string/grid_article_image_6"
             app:category="@string/grid_article_category_6" />
 
-    </GridLayout>
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
@@ -58,7 +72,7 @@
         android:background="@color/button_grey_alpha"
         android:gravity="center"
         android:textSize="15sp"
-        android:layout_marginTop="@dimen/general_activity_space"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="@dimen/general_activity_space"/>
 
 </LinearLayout>

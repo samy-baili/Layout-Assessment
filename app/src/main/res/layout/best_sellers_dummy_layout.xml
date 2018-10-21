@@ -34,23 +34,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <include
-            android:id="@+id/page_one"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            layout="@layout/add_article_views_dummy_layout" />
+        <!--<include-->
+            <!--android:id="@+id/page_one"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--layout="@layout/add_article_views_dummy_layout" />-->
 
-        <include
-            android:id="@+id/page_two"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            layout="@layout/add_article_views_dummy_layout" />
+        <!--<include-->
+            <!--android:id="@+id/page_two"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--layout="@layout/add_article_views_dummy_layout" />-->
 
-        <include
-            android:id="@+id/page_three"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            layout="@layout/add_article_views_dummy_layout" />
+        <!--<include-->
+            <!--android:id="@+id/page_three"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--layout="@layout/add_article_views_dummy_layout" />-->
 
     </androidx.viewpager.widget.ViewPager>
 

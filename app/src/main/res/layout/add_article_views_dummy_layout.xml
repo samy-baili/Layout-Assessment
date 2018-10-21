@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <android.apps.scent.com.scent_assessment.ui.AddArticleView
+    <android.apps.scent.com.scent_assessment.ui.views.AddArticleView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:image_url="@string/bestseller_image_1"
@@ -16,7 +16,7 @@
         app:description="@string/bestseller_description_1"/>
 
 
-    <android.apps.scent.com.scent_assessment.ui.AddArticleView
+    <android.apps.scent.com.scent_assessment.ui.views.AddArticleView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:image_url="@string/bestseller_image_2"
@@ -24,7 +24,7 @@
         app:price="@string/bestseller_price_2"
         app:description="@string/bestseller_description_2"/>
 
-    <android.apps.scent.com.scent_assessment.ui.AddArticleView
+    <android.apps.scent.com.scent_assessment.ui.views.AddArticleView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:image_url="@string/bestseller_image_3"

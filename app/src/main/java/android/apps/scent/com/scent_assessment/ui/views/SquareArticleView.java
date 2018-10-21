@@ -1,4 +1,4 @@
-package android.apps.scent.com.scent_assessment.ui;
+package android.apps.scent.com.scent_assessment.ui.views;
 
 import android.apps.scent.com.scent_assessment.R;
 import android.content.Context;

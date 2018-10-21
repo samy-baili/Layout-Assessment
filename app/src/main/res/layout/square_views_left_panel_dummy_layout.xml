@@ -7,19 +7,19 @@
     android:paddingStart="@dimen/general_activity_space"
     android:paddingEnd="@dimen/general_activity_space">
 
-    <android.apps.scent.com.scent_assessment.ui.SquareCardView
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <android.apps.scent.com.scent_assessment.ui.SquareCardView
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <android.apps.scent.com.scent_assessment.ui.SquareCardView
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <android.apps.scent.com.scent_assessment.ui.SquareCardView
+    <android.apps.scent.com.scent_assessment.ui.views.SquareCardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

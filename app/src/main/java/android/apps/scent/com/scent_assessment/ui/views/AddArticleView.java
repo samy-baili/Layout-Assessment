@@ -1,4 +1,4 @@
-package android.apps.scent.com.scent_assessment.ui;
+package android.apps.scent.com.scent_assessment.ui.views;
 
 import android.apps.scent.com.scent_assessment.R;
 import android.content.Context;
@@ -59,7 +59,7 @@ public class AddArticleView extends FrameLayout {
         setDescription(a.getString(R.styleable.AddArticleView_description));
         setPrice(a.getString(R.styleable.AddArticleView_price));
         setNewPrice(a.getString(R.styleable.AddArticleView_new_price));
-        setImageUrl(a.getString(R.styleable.AddArticleView_image_url));
+//        setImageUrl(a.getString(R.styleable.AddArticleView_image_url));
 
         a.recycle();
     }

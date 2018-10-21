@@ -5,7 +5,7 @@
     <dimen name="square_card_size">80dp</dimen>
     <dimen name="square_card_tab_height">5dp</dimen>
     <dimen name="general_activity_space">10dp</dimen>
-    <dimen name="article_image_size">80dp</dimen>
+    <dimen name="article_image_size">90dp</dimen>
 
     <dimen name="square_article_size">80dp</dimen>
     <dimen name="banner_height">100dp</dimen>
